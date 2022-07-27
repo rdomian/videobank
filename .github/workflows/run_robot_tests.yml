@@ -16,5 +16,5 @@ jobs:
           repo: testGithubActions
           github_token: ${{ secrets.GH_ACTIONS }}
           workflow_file_name: run_robot_framework_tests.yml
-          ref: master
+          ref: rdomianEEN-patch-1
           wait_interval: 30
