@@ -6,7 +6,6 @@ on:
   pull_request:
 jobs:
   build:
-    name: Run Robot Framework Tests from repo rdomian/testGithubActions
     runs-on: ubuntu-latest
     steps:
       - name: Run tests
