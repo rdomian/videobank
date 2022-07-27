@@ -1,10 +1,9 @@
 name: Run Robot Framework Tests
 on:
-  workflow_dispatch:
   push:
-  pull_request:
-    branches:
+  branches:
       - main
+  pull_request:
 jobs:
   build:
     name: Run Robot Framework Tests from repo rdomian/testGithubActions
