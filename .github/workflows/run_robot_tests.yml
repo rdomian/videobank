@@ -22,4 +22,5 @@ jobs:
       - name: Send test report as comment to commit
         if: always()
         run: |
-          echo "${{toJSON(github.event)}}"
+          echo "${{ github.event.commits[0].message }}"
+          echo "${{ github.event.head_commit.message }}"
