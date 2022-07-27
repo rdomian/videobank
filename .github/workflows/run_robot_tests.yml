@@ -1,6 +1,7 @@
 name: Run Robot Framework Tests
 on:
   push:
+  pull_request:
     branches:
       - main
 jobs:
