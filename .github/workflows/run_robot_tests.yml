@@ -1,0 +1,5 @@
+- uses: convictional/trigger-workflow-and-wait@v1.6.1
+  with:
+    owner: keithconvictional
+    repo: testGithubActions
+    github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
