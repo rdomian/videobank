@@ -5,14 +5,14 @@ on:
       - main
 jobs:
   build:
-  name: Run Robot Framework Tests from repo rdomian/testGithubActions
-  runs-on: ubuntu-latest
-  steps:
-    - name: Echo
-      run: echo "This is test"
-    - uses: convictional/trigger-workflow-and-wait@v1.6.1
-      with:
-        owner: rdomian
-        repo: testGithubActions
-        github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
-        workflow_file_name: run_robot_framework_tests.yml
+    name: Run Robot Framework Tests from repo rdomian/testGithubActions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo "This is test"
+      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: rdomian
+          repo: testGithubActions
+          github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+          workflow_file_name: run_robot_framework_tests.yml
