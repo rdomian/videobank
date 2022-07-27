@@ -8,12 +8,12 @@ jobs:
     name: Run Robot Framework Tests from repo rdomian/testGithubActions
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        run: echo "This is test"
-      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      - name: Run tests
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: rdomian
           repo: testGithubActions
           github_token: ${{ secrets.GH_ACTIONS }}
           workflow_file_name: run_robot_framework_tests.yml
           ref: master
+          wait_interval: 30
