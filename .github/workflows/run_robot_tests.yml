@@ -19,3 +19,7 @@ jobs:
           workflow_file_name: run_robot_framework_tests.yml
           ref: fail
           wait_interval: 30
+      - name: Send test report as comment to commit
+        if: always()
+        run: |
+          echo "${{toJSON(github.event)}}"
