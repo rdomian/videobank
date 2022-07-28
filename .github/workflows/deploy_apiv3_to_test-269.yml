@@ -1,0 +1,11 @@
+name: Deploy to test-269
+on:
+  push:
+    branches:
+      - testing/apiv3
+jobs:
+  Deploy to test-269:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: echo "Deploy to test-269...";sleep 3;echo "Done"
