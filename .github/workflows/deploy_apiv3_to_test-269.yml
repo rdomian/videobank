@@ -4,7 +4,7 @@ on:
     branches:
       - testing/apiv3
 jobs:
-  Deploy to test-269:
+  Deploy_to_test-269:
     runs-on: ubuntu-latest
     steps:
       - name: Run tests
