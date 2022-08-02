@@ -7,5 +7,5 @@ jobs:
   Deploy_to_test-269:
     runs-on: ubuntu-latest
     steps:
-      - name: Run tests
+      - name: Deploy to amodeus - test-269
         run: echo "Deploy to test-269...";sleep 3;echo "Done"
